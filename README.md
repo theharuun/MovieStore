@@ -1,15 +1,15 @@
-#MovieStore Projesi
-###Bu proje, .NET Core ile geliştirilen bir film mağazası API'sidir. Proje, kullanıcıların film satın almasını, favori türlerini yönetmesini ve siparişleri kaydetmesini sağlayan bir RESTful API sunar. Proje aynı zamanda Entity Framework Core kullanarak verilerin yönetimini sağlar ve Unit Testler ile kod kalitesini arttırmayı hedefler.
+# MovieStore Projesi
+Bu proje, .NET Core ile geliştirilen bir film mağazası API'sidir. Proje, kullanıcıların film satın almasını, favori türlerini yönetmesini ve siparişleri kaydetmesini sağlayan bir RESTful API sunar. Proje aynı zamanda Entity Framework Core kullanarak verilerin yönetimini sağlar ve Unit Testler ile kod kalitesini arttırmayı hedefler.
 
-##İçindekiler
-###Kullanılan Teknolojiler
-###Projede Kullanılan Yapılar
-###Projede Yer Alan Sınıflar
-###Veri Modeli
-###Kurulum
-###Testler
+### İçindekiler
+### Kullanılan Teknolojiler
+### Projede Kullanılan Yapılar
+### Projede Yer Alan Sınıflar
+### Veri Modeli
+### Kurulum
+### Testler
 
-##Kullanılan Teknolojiler
+#### Kullanılan Teknolojiler
 .NET Core 6: .NET platformunun son sürümü ile API geliştirilmiştir.
 Entity Framework Core: Veritabanı yönetimi için kullanılan bir ORM aracıdır. Bu projede in-memory veritabanı kullanılmıştır.
 AutoMapper: Veritabanı modellerini DTO'lara (Data Transfer Object) dönüştürmek için kullanılmıştır.
