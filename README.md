@@ -8,7 +8,7 @@ Bu proje, .NET Core ile geliştirilen bir film mağazası API'sidir. Proje, kull
 ### Veri Modeli
 ### Kurulum
 ### Testler
-
+---------
 #### Kullanılan Teknolojiler
 .NET Core 6: .NET platformunun son sürümü ile API geliştirilmiştir.
 Entity Framework Core: Veritabanı yönetimi için kullanılan bir ORM aracıdır. Bu projede in-memory veritabanı kullanılmıştır.
@@ -16,7 +16,8 @@ AutoMapper: Veritabanı modellerini DTO'lara (Data Transfer Object) dönüştür
 FluentValidation: Girdi doğrulaması ve verilerin kurallara uygunluğunu sağlamak için kullanılmıştır.
 XUnit: Projede birim testler XUnit test frameworkü ile yazılmıştır.
 Postman: API isteklerini test etmek için kullanılan bir araçtır.
-Projede Kullanılan Yapılar
+----------
+#### Projede Kullanılan Yapılar
 Dependency Injection (DI): Uygulamada bağımlılıkların dışarıdan enjekte edilmesi için kullanılır. Bu projede yer alan sınıflar DI ile yönetilmekte ve servislerin yaşam döngüsü kontrol edilmektedir.
 
 DTO (Data Transfer Object): Veritabanı modelleri ile dışarıya sunulan API modelleri arasında veri taşıma katmanı olarak kullanılır. DTO’lar sayesinde veritabanı ile direkt ilişki kurulmaktan kaçınılır.
@@ -24,8 +25,8 @@ DTO (Data Transfer Object): Veritabanı modelleri ile dışarıya sunulan API mo
 Middleware: Uygulamanın istek ve yanıt aşamalarında kullanılan katmanlar. Özellikle hata yönetimi ve JWT ile kimlik doğrulama aşamalarında kullanılmıştır.
 
 Unit of Work & Repository Pattern: Projede veri tabanı işlemlerini yönetmek için Unit of Work deseni uygulanmıştır. Veritabanı işlemleri belirli sınıflar aracılığıyla soyutlanmıştır.
-
-Projede Yer Alan Sınıflar
+---------
+#### Projede Yer Alan Sınıflar
 Commands
 CreateCustomerCommand: Yeni bir müşteri eklemek için kullanılır. Müşteri eklendiğinde, favori türler ve satın alınan filmler de güncellenir.
 
@@ -44,8 +45,8 @@ Queries
 GetCustomerByNameQuery: Belirli bir isimle müşteri araması yapar. İsim benzersiz olmalı ve aynı isimle birden fazla müşteri bulunmamalıdır.
 
 GetMoviesQuery: Tüm filmleri listelemek için kullanılır. Filmlerin isimleri ve türleri gibi bilgiler döndürülür.
-
-Veri Modeli
+---------
+#### Veri Modeli
 Proje veritabanı modelleri aşağıdaki gibidir:
 
 Customer: Müşterilerle ilgili bilgiler içerir. Müşterinin favori film türleri ve satın aldığı filmler gibi özellikleri bulunmaktadır.
@@ -55,5 +56,13 @@ Movie: Filmlerle ilgili temel bilgileri içerir. Bir film, birden fazla türe sa
 Order: Siparişlerle ilgili bilgiler içerir. Müşteri ID'si, sipariş tarihi ve siparişteki filmler gibi bilgileri tutar.
 
 Genre: Film türlerini temsil eder. Bir film bir veya birden fazla türe ait olabilir.
-
-Kurulum
+------------
+#### Kurulum
+1 Projeyi yerel ortamınıza klonlayın:  "git clone https://github.com/theharuun/MovieStore.git"
+2 Projeyi Visual Studio veya VS Code ile açın.
+3 Gerekli bağımlılıkları yüklemek için terminalde şu komutu çalıştırın: "dotnet restore"
+4 Uygulamayı çalıştırmak için: "dotnet run"
+5 API'yi Postman veya benzeri bir araç ile test edebilirsiniz.
+---------
+#### Testler
+Proje, XUnit kullanarak yazılmış birim testlere sahiptir. Testler, komutlar ve sorgular için doğrulama işlemleri, hata fırlatmalarını ve başarılı sonuçları kontrol eder.
