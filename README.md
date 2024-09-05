@@ -10,6 +10,7 @@ Bu proje, .NET Core ile geliştirilen bir film mağazası API'sidir. Proje, kull
 ### Testler
 ---------
 #### Kullanılan Teknolojiler
+
 .NET Core 6: .NET platformunun son sürümü ile API geliştirilmiştir.
 Entity Framework Core: Veritabanı yönetimi için kullanılan bir ORM aracıdır. Bu projede in-memory veritabanı kullanılmıştır.
 AutoMapper: Veritabanı modellerini DTO'lara (Data Transfer Object) dönüştürmek için kullanılmıştır.
@@ -59,9 +60,13 @@ Genre: Film türlerini temsil eder. Bir film bir veya birden fazla türe ait ola
 ------------
 #### Kurulum
 1 Projeyi yerel ortamınıza klonlayın:  "git clone https://github.com/theharuun/MovieStore.git"
+
 2 Projeyi Visual Studio veya VS Code ile açın.
+
 3 Gerekli bağımlılıkları yüklemek için terminalde şu komutu çalıştırın: "dotnet restore"
+
 4 Uygulamayı çalıştırmak için: "dotnet run"
+
 5 API'yi Postman veya benzeri bir araç ile test edebilirsiniz.
 ---------
 #### Testler
